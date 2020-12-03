@@ -1,0 +1,24 @@
+{
+  "name": "backend-challenge",
+  "version": "1.0.0",
+  "description": "Back-end developer position challenge",
+  "main": "index.js",
+  "scripts": {
+    "data:import": "node seeder.js",
+    "data:relate": "node seeder.js -r",
+    "data:destroy": "node seeder.js -d",
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikefg96",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.1"
+  }
+}
